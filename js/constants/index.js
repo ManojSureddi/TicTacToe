@@ -1,0 +1,19 @@
+const _iboard={
+  tbodystart:"<tbody>",
+  tbodyend:"</tbody>",
+  trstart:"<tr>",
+  trend:"</tr>",
+  td:"<td></td>",
+  boardFrame:"#tictactoe",
+  player1:"#59ABE3",
+  player2:"#EC644B",
+  class:{
+    blocked:"blocked",
+    players:["player1","player2"]
+  },
+  id:{
+    single:"#single",
+    multi:"#multi",
+    start:"#start"
+  }
+}

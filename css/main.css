@@ -1,0 +1,67 @@
+#tictactoe{
+ border-collapse: collapse;
+}
+
+#tictactoe td{
+  font-family: 'Indie Flower', cursive;
+  width:100px;
+  height:100px;
+  border:1px solid #999;
+  text-align: center;
+  font-size: 450%;
+  cursor: pointer;
+}
+
+#tictactoe td:hover{
+  box-shadow: 0px 0 5px rgba(34,167,240,1.5);
+  transition: all .2s ease;
+}
+
+.player1{
+  color:rgb(89, 171, 227);
+}
+.player1:after{
+  content:"X";
+}
+.player2{
+  color:rgb(231, 76, 60);
+}
+.player2:after{
+  content:"O";
+}
+#start{
+  width: 308px;
+  height: 300px;
+  border: 1px solid #999;
+  position: absolute;
+  margin-top: -301px;
+  background: rgba(89, 171, 227,.8);
+}
+.selection{
+  display: block;
+  margin: 0 auto;
+  outline: none;
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  font-family: 'Bubblegum Sans', cursive;
+  border: 0;
+  border-radius: 10px;
+  color: #efefef;
+  font-size: 24px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+#single{
+  background:#1E824C
+}
+#multi{
+  background:#D35400
+}
+.icon-image{
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  height: 100px;
+  margin-top: 20px;
+}
