@@ -8,13 +8,25 @@
 <body>
   <div >
     <table id="tictactoe"></table>
+    <div class="control-panel">
+      <i class="icon-pause2"></i>
+      <i class="icon-redo2"></i>
+    </div>
+
     <div id="start">
       <image src="images/1.svg" class="icon-image">
       <button id="single" class="selection">Single player</button>
       <button id="multi" class="selection">Multi player</button>
     </div>
-    <div id="stop"></div>
-  </div>
+    <div id="stop">
+      <div id="gameover">
+          <p class="over">Game Over</p>
+          <p id="winner">Player 1 won the game</p>
+      </div>
+      <button id="newgame" class="pausecontrols"><i class=""></i></button>
+      <button id="exit" class="pausecontrols"><i class=""></i></button>
+    </div>
+</div>
 
 </body>
 <script src="js/jquery.js"></script>

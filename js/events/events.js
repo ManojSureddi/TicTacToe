@@ -8,7 +8,9 @@ class Events{
           player++;
           if(player>=5){
             let result = Lifecycle.checkGameOver();
-            console.log(result);
+            if(result){
+              
+            }
           }
         }
     })
@@ -16,7 +18,6 @@ class Events{
 
   static gameControls(){
     $(_iboard.id.single).on("click",(event)=>{
-      console.log("manoj")
         $(_iboard.id.start).slideUp();
     });
   }
