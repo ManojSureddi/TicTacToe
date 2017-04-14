@@ -1,2 +1,2 @@
 "use strict";
-let player=0;
+let player = 0;

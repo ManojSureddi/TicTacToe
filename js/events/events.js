@@ -8,8 +8,14 @@ class Events{
           player++;
           if(player>=5){
             let result = Lifecycle.checkGameOver();
+            console.log(result);
             if(result){
-              
+              console.log($(_iboard.id.stop));
+              $(_iboard.id.stop).css("display","block");
+              $(_iboard.id.winner).html(result.winner +" won the game");
+              $(_iboard.class.controlpanel).animate({ "margin-left": "250px" }, "slow" );
+              $(_iboard.class.controlpanel).css("z-index","-1");
+
             }
           }
         }
@@ -17,9 +23,21 @@ class Events{
   }
 
   static gameControls(){
-    $(_iboard.id.single).on("click",(event)=>{
+    $(_iboard.id.multi).on("click",(event)=>{
         $(_iboard.id.start).slideUp();
+        $(_iboard.class.controlpanel).animate({ "margin-left": "315px" }, "slow" );
+        $(_iboard.class.controlpanel).animate({ "z-index": "0" }, "fast" );
     });
+    $(_iboard.id.new).on("click",(event)=>{
+      Lifecycle.newGame();
+      $(_iboard.id.stop).slideUp();
+      $(_iboard.class.controlpanel).animate({ "margin-left": "315px" }, "slow" );
+      $(_iboard.class.controlpanel).animate({ "z-index": "0" }, "fast" );
+    })
+    $(_iboard.id.pausegame).on("click",(event)=>{
+      $(_iboard.id.stop).slideUp();
+      $(_iboard.id.paused).css("display","block");
+    })
   }
 
 }
